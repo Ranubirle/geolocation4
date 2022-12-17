@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .rectangle{
+            position: absolute;
+width: 1728px;
+height: 548px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+
+        }
+        .weatherapi{
+            position: absolute;
+width: 692.27px;
+height: 144px;
+left: 518px;
+top: 101px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+
+color: #FFFFFF;
+        }
+        .group{
+            position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+        }
+        .land{
+            
+position: relative;
+width: 1728px;
+height: 548px;
+
+background: #FFFFFF;
+
+        }
+     
+       .lat{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 154px;
+top: 323px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #FFFFFF;
+
+       }
+       .long{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 887px;
+top: 335px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #FFFFFF;
+
+
+       }
+       .weather{
+        
+position: absolute;
+width: 692.27px;
+height: 144px;
+left: 518px;
+top: 101px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+
+color: #FFFFFF;
+       }
+       .group{
+        
+position: absolute;
+width: 912px;
+height: 160px;
+left: 62px;
+top: 1389px;
+
+       }
+       .rectangle4{
+        
+position: absolute;
+width: 1728px;
+height: 1271px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+       }
+       .rectangle2{
+        
+position: absolute;
+width: 1728px;
+height: 1271px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+       }
+       .fetch{
+        position: absolute;
+width: 331px;
+height: 33px;
+left: 658px;
+top: 326px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+       }
+       .group25{
+        
+position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+       .group{
+        
+position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+       .rectangle1{
+        position: absolute;
+width: 1728px;
+height: 1271px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+       }
+       .weatherapi1{
+        position: absolute;
+width: 692.27px;
+height: 144px;
+left: 518px;
+top: 101px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+
+color: #FFFFFF;
+
+       }
+       .weatherdata{
+        position: absolute;
+width: 912px;
+height: 160px;
+left: 62px;
+top: 1389px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+
+color: #000000;
+
+       }
+       .group3-1{
+        position: absolute;
+width: 912px;
+height: 160px;
+left: 62px;
+top: 1389px;
+
+       }
+       .location{
+        position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 1670px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .lat1{
+        
+     
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 1779px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .long1{
+        position: absolute;
+width: 669.46px;
+height: 74px;
+left: 849px;
+top: 1791px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .timezone{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 1888px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+       }
+       .windspeed{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 1997px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+       }
+       .pressure{
+        position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 2100px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .humadity{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 2203px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .wind-direct{
+        position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 2306px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+
+       }
+       .uv-index{
+        
+position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 2415px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+
+       }
+       .feelslike{
+        position: absolute;
+width: 669.46px;
+height: 74px;
+left: 116px;
+top: 2518px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+
+color: #000000;
+       }
+       .rectangle3{
+        box-sizing: border-box;
+
+position: absolute;
+width: 1585px;
+height: 1120px;
+left: 62px;
+top: 1614px;
+
+border: 2px solid #000000;
+
+       }
+       .group4{
+        
+position: absolute;
+width: 1585px;
+height: 1120px;
+left: 62px;
+top: 1614px;
+
+       }
+       .screenshot{
+        
+position: absolute;
+width: 1420px;
+height: 655px;
+left: 154px;
+top: 487px;
+
+background: url(Screenshot.png);
+       }
+       .rectangle5{
+        position: absolute;
+width: 1728px;
+height: 548px;
+left: 0px;
+top: 0px;
+
+background: #000000;
+       }
+       .weatherapi2{
+        position: absolute;
+width: 692.27px;
+height: 144px;
+left: 518px;
+top: 101px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 121px;
+
+color: #FFFFFF;
+       }
+       .rectangle6{
+        
+position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+background: #FFFFFF;
+       }
+       .fetchdata{
+        position: absolute;
+width: 331px;
+height: 33px;
+left: 658px;
+top: 326px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+       }
+       .group{
+        position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+       .group26{
+        
+position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+       .landing4{
+        
+position: relative;
+width: 1728px;
+height: 548px;
+
+background: #FFFFFF;
+       }
+       .screenshot{
+            
+position: absolute;
+width: 1420px;
+height: 655px;
+left: 154px;
+top: 487px;
+
+
+       }
+       .group25{
+              
+position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+       .group3{
+              position: absolute;
+width: 492px;
+height: 58px;
+left: 577px;
+top: 313px;
+
+       }
+      
+
+
+
+      
+    </style>
+    <script>
+       
+              if('geolocation' in navigator)
+              {
+       
+        console.log("geolocation is available");
+        navigator.geolocation.getCurrentPosition(position=>{
+            const lat=position.coords.latitude;
+            const long=position.coords.longitude;
+            document.getElementById("lat").textContent=lat;
+            document.getElementById("long").textContent=long;
+          
+       })
+}
+
+       else
+       {
+        console.log("goelocation is not available");
+
+       }
+       let p="https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={long}&exclude={hourly}&appid={e8fa15c20e91f5ea2ed5a67ccb616e32}"
+     let weatherData;
+       fetch(p)
+     .then(data=>{
+        return data.json();
+     })
+     .then(json=> {
+        console.log(json);
+     
+     weatherData = json;
+     document.getElementById('location1').innerText = weatherData.address
+           
+            document.getElementById('lat2').innerText = weatherData.latitude
+           
+            document.getElementById('long2').innerText = weatherData.longitude
+           
+
+            document.getElementById('timezone1').innerText = weatherData.timezone
+           
+            document.getElementById('windSpeed1').innerText = weatherData.days[0].windspeed
+         
+            document.getElementById('pressure1').innerText = weatherData.days[0].pressure
+          
+            document.getElementById('humadity1').innerText = weatherData.days[0].humadity
+         
+
+            document.getElementById('windirect').innerText = weatherData.days[0].winddirection
+         
+            document.getElementById('uvindex').innerText = weatherData.days[0].uvindex
+           
+            document.getElementById('feellike').innerText = weatherData.days[0].feelslike
+         
+
+     })
+           
+
+          
+        
+       
+     
+</script>
+</head>
+<body>
+    
+      
+    <div class="rectangle"></div>
+    
+    <div class="weather api">Weather Api</div>
+    <div class="rectangle2"></div>
+    <h1 class="fetch">Fetch Data </h1>
+    <div class="group25"></div>
+    <div class="group3"></div>
+    <div class="land">Landing Page</div>
+    <div class="rectangle1"></div>
+    <h1 class="lat">Lat:&nbsp;&nbsp;<span id="lat"></span></h1>
+    <h1 class="long">Long:&nbsp;&nbsp;<span id="long"></span></h1>
+    <h1 class="weatherapi1"> Weather Api</h1>
+    <h1 class="weatherdata"> Weather Data</h1>
+   
+    <h1 class="location">Location:&nbsp;<span id="location1"></span></h1>
+    <h1 class="lat1" > Lat:<span id="lat2"></span></h1>
+    <h1 class="long1">Long:<span id="long2"></span></h1>
+    <h1 class="timezone" >TimeZone:<span id="timezone1"></span></h1>
+    <h1 class="windspeed" > Wind Speed:<span id="windspeed1"></span> </h1>
+    <h1 class="pressure" >Pressure:<span id="pressure1"></span></h1>
+    <h1 class="humadity">Humidity:<span id="humadity1"></span></h1>
+    <h1 class="wind-direct"> Wind Direction:<span id="windirect"></span></h1>
+    <h1 class="uv-index" >UV Index:<span id="uvindex"></span></h1>
+    <h1 class="feelslike">Feels Like:<span id="feellike"></span></h1>
+    <div class="rectangle3"></div>
+    
+    
+    
+    <img src="https://developers.google.com/static/maps/images/landing/hero_maps_static_api_480.png" class="screenshot"></div>
+   
+  
+  
+</body>
+</html>
